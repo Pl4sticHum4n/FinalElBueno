@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="418dp"
+        android:layout_height="314dp"
+        android:background="@color/purple_200"
+        android:src="@drawable/user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/purple_200"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvLastname"
+        app:layout_constraintTop_toBottomOf="@id/profilePic" />
+
+    <TextView
+        android:id="@+id/tvLastname"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/purple_200"
+        android:text="Apellido"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilePic" />
+    <TextView
+        android:id="@+id/nivelLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nivel"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintRight_toLeftOf="@+id/pkmLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/pkmLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Pokémon"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/nivelLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+    <TextView
+        android:id="@+id/tvNivel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/nivelLabel"
+        app:layout_constraintRight_toLeftOf="@+id/tvNumPkmn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tvNumPkmn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="25dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/tvNivel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pkmLabel" />
+
+    <ImageView
+        android:id="@+id/nickLogo"
+        android:layout_width="114dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvnickName"
+        app:layout_constraintTop_toBottomOf="@id/tvNumPkmn" />
+
+    <TextView
+        android:id="@+id/tvnickName"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:text="Nickname"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNumPkmn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nickLogo"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="62dp"
+        android:src="@drawable/pngitem_1982524"
+        android:layout_marginTop="73dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvnickName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RightFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/et_pokemon_to_search_for"
+        android:hint="Buscar Pokémon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_search"
+        />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:layout_marginTop="20dp"
+        app:icon="?android:attr/actionModeWebSearchDrawable"
+        app:layout_constraintLeft_toRightOf="@+id/et_pokemon_to_search_for"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pokemon_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_pokemon_to_search_for" />
+
+    <Button
+        android:id="@+id/btnCatchPkmn"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#00000000"
+        app:icon="@drawable/heart"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_info"
+         />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/pkmnGif"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/giphy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pokemon_info" />
+
+    <ImageView
+        android:id="@+id/ivPkmnSprite"
+        android:layout_width="150dp"
+        android:layout_height="239dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pokemon_info"
+        />
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_info"
+        />
+
+    <TextView
+        android:id="@+id/labelType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/btnCatchPkmn" />
+    <TextView
+        android:id="@+id/labelHP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelType" />
+    <TextView
+        android:id="@+id/labelAtk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelHP" />
+    <TextView
+        android:id="@+id/labelAtkSpc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelAtk" />
+    <TextView
+        android:id="@+id/labelDef"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelAtkSpc" />
+    <TextView
+        android:id="@+id/labelDefSpc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelDef" />
+    <TextView
+        android:id="@+id/labelSpd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelDefSpc" />
+    <TextView
+        android:id="@+id/labelPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ivPkmnSprite"
+        app:layout_constraintTop_toBottomOf="@id/labelSpd" />
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelType"
+        app:layout_constraintTop_toBottomOf="@id/btnCatchPkmn" />
+    <TextView
+        android:id="@+id/tvHP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelHP"
+        app:layout_constraintTop_toBottomOf="@id/tvType" />
+    <TextView
+        android:id="@+id/tvAtk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelAtk"
+        app:layout_constraintTop_toBottomOf="@id/tvHP" />
+    <TextView
+        android:id="@+id/tvAtkSpc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelAtkSpc"
+        app:layout_constraintTop_toBottomOf="@id/tvAtk" />
+    <TextView
+        android:id="@+id/tvDef"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelDef"
+        app:layout_constraintTop_toBottomOf="@id/tvAtkSpc" />
+    <TextView
+        android:id="@+id/tvDefSpc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelDefSpc"
+        app:layout_constraintTop_toBottomOf="@id/tvDef" />
+    <TextView
+        android:id="@+id/tvSpd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelSpd"
+        app:layout_constraintTop_toBottomOf="@id/tvDefSpc" />
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toRightOf="@id/labelPeso"
+        app:layout_constraintTop_toBottomOf="@id/tvSpd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433636190765",
+    "project_id": "finalbueno-f0546",
+    "storage_bucket": "finalbueno-f0546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433636190765:android:9cabcee22b1521b29026a4",
+        "android_client_info": {
+          "package_name": "com.example.finalelbueno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433636190765-88gm3mqrkbr53agj51sus1clhcbduj65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF8C7hSAjNsXmzPUsq87wD8Nso5uG-bdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433636190765-88gm3mqrkbr53agj51sus1clhcbduj65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
